@@ -6,7 +6,6 @@ const VideoListItem = ({
   video
 }) => {
   //This ({video}) is equal to props.video
-  console.log(video);
   const imageUrl = video.snippet.thumbnails.default.url
 
   return (
