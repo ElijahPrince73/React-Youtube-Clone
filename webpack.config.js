@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry:     './src/index.js',
+  entry: './src/index.js',
   output: {
     path: __dirname,
     filename: 'bundle.js'
@@ -15,7 +15,7 @@ module.exports = {
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {
-    contentBase:__dirname,
+    contentBase: __dirname,
     historyApiFallback: true
   }
 };
