@@ -6,7 +6,6 @@ const VideoListItem = ({
 }) => {
   //This ({video}) is equal to props.video
   const imageUrl = video.snippet.thumbnails.default.url
-  console.log(onVideoSelect);
   return (
     <li onClick={() => onVideoSelect(video)} className='list-group-item'>
       <div className='video-list media'>
