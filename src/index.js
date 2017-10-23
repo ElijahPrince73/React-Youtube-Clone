@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import React, {
   Component
 } from 'react';
@@ -35,6 +36,11 @@ class App extends Component {
   }
 
   render() {
+
+    const videoSearch = _.debounce(() => {
+      this.videoSearch(term)
+    }, 300)
+
     return (
       <div>
       <SearchBar onSearchTermChange={term => this.videoSearch(term)}/>
